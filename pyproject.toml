@@ -1,0 +1,16 @@
+[project]
+name = "pen_spin"
+version = "0.2.0"
+description = "Pen spinning with the Sharpa Wave hand (Isaac Lab 3.0 / Isaac Sim 6.2)"
+requires-python = ">=3.12"
+
+[project.entry-points."isaaclab.tasks"]
+pen_spin = "pen_spin.tasks"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["source"]
+include = ["pen_spin*"]
